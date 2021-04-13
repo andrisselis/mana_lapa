@@ -1,0 +1,309 @@
+<html>
+    <head>
+        <title>Trīsdimensiju kuba veidošana</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="noformejums.css" rel="stylesheet" type="text/css">
+        <style>
+.Attels1{
+ margin-right: 40px;
+ border-radius: 20px;
+}
+.Attels2{
+ margin-left: 40px;
+ border-radius: 20px;
+}
+td{vertical-align: top}
+
+.rez {font-size:20px}
+/**/
+/*Kuba attēlu lauks*/
+/**/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: "Calibri", sans-serif, Times;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/**/
+/*Kuba attēlu lauks - nobeigums*/
+/**/
+        </style>
+    </head>
+    <body>
+<ul>
+    <li><a href="sakumlapa.html">Sākumlapa</a></li>
+    <li>
+        <a href="kubs.html" class="active">Kubs</a>
+        <div class="kuba_sadalas">
+        <a href="#planosana">Plānošana</a>
+        <a href="#rezultats">Rezultāts</a>
+        <a href="#galerija">Galerija</a>  
+        </div></li>
+    <li><a href="anketa.html">Anketa</a></li>
+    <li><a href="saites.html">Ārējas saites</a></li>
+</ul>
+        
+        
+  <button onclick="topFunction()" id="poga_augsup" title="Uz lapas augšpusi">⬆</button><!-- Poga, lai nokļūtu lapas virspusē -->
+  
+  <center><virsraksts>Trīsdimensiju kuba veidošana</virsraksts></center>
+  <p></p>
+  <p></p>
+  
+  <hr><div id="planosana">
+  <center><h1>Plānošana</h1></center>
+  
+  <table style="width:90%; margin-left: auto; margin-right: auto;" >
+  <tr>
+    <td><img class="Attels1" src="planosana.png" alt="Skice" width="600"></td>
+    <td>
+        <p style="font-size:20px">3D kuba izstrāde mums sastāvēja no sekojošām darbībām:</p>
+        <p>1. Lai, kubu izprintējot, to varētu salikt, tam ir nepieciešāmas nelielas atstapes (mūsu gadījumā 0,1 mm) starp detaļām. Tādēļ sākumā mēs uzzīmējām dažādas skices, līdz nonācām pie vēlamā rezultāta. Viena no skicēm redzama attlā pa kreisi.</p>
+        <p>2. Tad mēs sākām veidot sānu skaldnes šablonu - mēs izveidojām lielo paralēlskadni ar izmēriem 100x100x10 mm, tad ar augstu mērijumu precizitāti un maziem parelēlskalņiem (<i>gandrīz</i> kubiem), kurus iestatījām kā tukšumus, veidojām robiņus. Šos visus objektus sagrupējot, radās pirmā veida skaldnes šablons.</p>
+        <p>3. Tad mēs dublējām izveidoto skaldni un pielāgojām to otrā tipa skaldnei, kas tiek izmantotas pamatos.</p>
+        <p>4. Tālāk skaldnes tika dublētas atbilstoši nepieciešamajam skaitam - četras sānu skaldnes un divas pamata.</p>
+        <p>5. Tad uz skaldnēs mēs salikām iniciāļus atbilstoši katra velmēm, bez izmēru saskaņošanas.</p>
+        <p>6. Un atlika tikai sakārtot skaldnes kuba veidā, lai pārbaudītu, vai sakrīt skalņu atstatumi.</p>
+    </td> 
+  </tr></table>
+  </div>
+ 
+  
+  <hr><div id="rezultats">
+  <center><h1>Rezultāts</h1></center>
+  
+  <table style="width:90%; margin-left: auto; margin-right: auto;" >
+  <tr>
+      <td><p class="rez">Šādi izskatās pabeigts kubs. STL faili krāsas nesaglabā, tādēļ šajā attēlā to iekrāsoju zeltītā krāsā (jeb kā materiālu uzstādīju zeltu - tas gan mazsvarīgi).</p>
+      <p class="rez">Lai apskatītu izveidoto 3D kubu pilnībā, to var lejupielādēt <a href="Gatavs_kubs.stl">šeit</a>.</p>
+  <p class="rez">Kuba autori: es - Andris Sēlis, Jēkabs Staņko, Mārtiņš Staņko un Aleksejs Tabunovs.</p></td>
+    <td><img class="Attels2" src="rezultats.png" alt="Izveidotais kubs" width="600"></td> 
+  </tr></table>
+  </div>
+  
+  
+  <hr><div id="galerija">
+  <center><h1>Galerija</h1></center>
+  
+  <center><h3>Šeit var aplūkot nelielu galeriju ar izveidoto kubu, skatoties no dažādiem skata leņķiem un dažādos skatos.</h3></center>
+  
+  <center>
+  <div class="container" style="width: 70%">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="attels1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="attels2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="attels3.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="attels4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="attels5.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="attels6.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="attels1.png" style="width:100%" onclick="currentSlide(1)" alt="Kopskats (iekrāsots zeltītā krāsā)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="attels2.png" style="width:100%" onclick="currentSlide(2)" alt="Skaldnes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="attels3.png" style="width:100%" onclick="currentSlide(3)" alt="Pamata skaldne">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="attels4.png" style="width:100%" onclick="currentSlide(4)" alt="Kubs gan saliktā, gan nesaliktā veidā">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="attels5.png" style="width:100%" onclick="currentSlide(5)" alt="Atstarpes">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="attels6.png" style="width:100%" onclick="currentSlide(6)" alt="Kubs caurskatot">
+    </div>
+  </div>
+</div></center>
+
+  </div>
+
+        
+<div class="kajene">
+  <p>Autors: Andris Sēlis</p>
+</div>
+        
+        <script>
+//Get the button
+var mybutton = document.getElementById("poga_augsup");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function myFunction() {
+  var elmnt = document.getElementById("saturs");
+  elmnt.scrollIntoView();
+}
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </body>
+</html>

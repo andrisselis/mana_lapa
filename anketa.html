@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Anketa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="noformejums.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+<ul>
+    <li><a href="sakumlapa.html">Sākumlapa</a></li>
+    <li><a href="kubs.html" >Kubs</a></li>
+    <li><a href="anketa.html" class="active">Anketa</a></li>
+    <li><a href="saites.html">Ārējas saites</a></li>
+</ul>
+
+<button onclick="topFunction()" id="poga_augsup" title="Uz lapas augšpusi">⬆</button><!-- Poga, lai nokļūtu lapas virspusē -->
+        
+  <center><virsraksts>Aptauja</virsraksts></center>
+  <p></p>
+  <p></p>
+  <p><center>Esmu izveidojis nelielu aptauju par transporta lietošanas paradumiem.</center></p>
+  <p></p>
+  <p></p>
+<div class="kajene">
+  <p>Autors: Andris Sēlis</p>
+</div>  
+<script>
+//Get the button
+var mybutton = document.getElementById("poga_augsup");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function myFunction() {
+  var elmnt = document.getElementById("saturs");
+  elmnt.scrollIntoView();
+}
+
+</script>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMrYtk81JgIv6c6zk9oxaFBVFacXZZ3VYFtbHT1R8wOoUF2w/viewform?usp=sf_link" frameborder="0" scrolling="yes" onload="resizeIframe(this)" width="100%" height="2800" id="iframeid"/>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+/* 
+    Created on : 2021. gada 23. marts, 14:45:12
+    Author     : Andris Sēlis
+*/
+
+/*Pamatlietas*/
+body{background-color: whitesmoke; padding-top: 100px; padding-bottom: 100px;  margin: 0;}
+html {scroll-behavior: smooth}
+p  {font-family: "Calibri", sans-serif, Times;}
+virsraksts {font-family: "Monotype Corsiva", Times, serif; font-size: 50px}
+h1 {font-family: "Monotype Corsiva", Times, serif;}
+h3 {font-family: "Calibri", sans-serif, Times; font-size: 20px; width: 70%; padding:0px}
+/*Pamatlietas-nobeigums*/
+
+/*Izvēlnes josla*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-family: "Calibri", sans-serif, Times;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FFA500;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.kuba_sadalas {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+attla_platums{width: 50%}
+/*Izvēlnes josla - nobeigums*/
+
+/*Poga augšup*/
+#poga_augsup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#poga_augsup:hover {
+  background-color: #555;
+}
+/*Poga augšup - nobeigums*/
+
+
+
+/*Apakšējā josla*/
+.kajene {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: left;
+}
+/*Apakšējā josla - nobeigums*/
+#iframeid{
+    border:none;
+}

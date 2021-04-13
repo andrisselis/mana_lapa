@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sākumlapa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="noformejums.css" rel="stylesheet" type="text/css">
+        <style>
+img {
+  border-radius: 30px;
+  margin: 15px;
+  box-shadow: 5px 5px 2px #808080;
+} 
+
+</style>
+    </head>
+    <body>
+<ul>
+    <li><a href="sakumlapa.html" class="active">Sākumlapa</a></li>
+    <li><a href="kubs.html" >Kubs</a></li>
+    <li><a href="anketa.html">Anketa</a></li>
+    <li><a href="saites.html">Ārējas saites</a></li>
+</ul>
+        
+<button onclick="topFunction()" id="poga_augsup" title="Uz lapas augšpusi">⬆</button><!-- Poga, lai nokļūtu lapas virspusē -->
+
+
+<center><virsraksts>Sākumlapa</virsraksts></center>
+<p></p>
+  <p></p>
+  <center><h3>Šī ir manis izveidotā mājas lapa, kura satur atskaiti par trīsdimensiju kuba izveidi (sadaļā "Kubs"), Google Forms izveidotu aptauju par transporta lietošanas paradumiem (sadaļā "Anketa"), kā arī saites uz dažādiem ārējiem avotiem (sadaļā "Ārējas saites").</h3></center>
+  <center><h3>Tā kā man iepriekš ir bijusi neliela pieredze ar WEB dizainu un HTML (nedaudz arī ar PHP), tad ar šo darbu es mazliet atsvaidzināju savas iemaņas. Protams, rezultāts varbūt nav tik estētiski pievilcīgs un izpildījums nav tik racionāls, kā būtu veidojot šo darbu caur Google Sites, taču šo formātu uzskatīju par jēgpilnāku.
+      Tā kā mana pieredze nev pārāk plaša, dažus lapas elementus (piemēram tos, kur nepieciešams JavaScript) es atradu dažādos avotos un pielāgoju tos savām vajadzībām.</h3></center>
+<center>
+    
+    <a href="kubs.html"><img src="kubs.png" alt="Kubs" width="300"></a>
+    <a href="anketa.html"><img src="google-forms-logo.jpg" alt="Kubs" width="300"></a>
+    <a href="saites.html"><img src="links.jpg" alt="Kubs" width="300"></a>
+    
+</center>  
+  
+<div class="kajene">
+  <p>Autors: Andris Sēlis</p>
+</div>
+        
+<script>
+//Get the button
+var mybutton = document.getElementById("poga_augsup");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function myFunction() {
+  var elmnt = document.getElementById("saturs");
+  elmnt.scrollIntoView();
+}
+
+</script>
+    </body>
+</html>
