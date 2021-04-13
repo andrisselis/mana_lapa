@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ārējās saites</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="noformejums.css" rel="stylesheet" type="text/css">
+        <style>
+            p {padding-left: 50px; padding-right: 50px;}
+        </style>
+    </head>
+    
+<ul>
+    <li><a href="sakumlapa.html">Sākumlapa</a></li>
+    <li><a href="kubs.html" >Kubs</a></li>
+    <li><a href="anketa.html">Anketa</a></li>
+    <li><a href="saites.html" class="active">Ārējas saites</a></li>
+</ul>
+
+<button onclick="topFunction()" id="poga_augsup" title="Uz lapas augšpusi">⬆</button><!-- Poga, lai nokļūtu lapas virspusē -->
+
+<center><virsraksts>Saites uz ārējiem avotiem</virsraksts></center>
+  <p> </p>
+  <p> </p>
+  <center><p>Šeit var atrast informāciju un saites uz dažādu izglītības iestāžu tīmekļa vietnēm.</p></center>
+  <p> </p>
+  <p> </p>    
+  <p><b>Rīgas Valsts 1. ģimnāzija</b></p> 
+  <p>Raiņa bulvāris 8, Centra rajons, Rīga, LV-1050</p>  
+  <p><a href="http://r1g.edu.lv/">r1g.edu.lv</a></p>  
+  <p> </p>  
+  <hr>
+  <p> </p>  
+  <p><b>Rīgas Tehniskā universitāte</b></p>  
+  <p>Kaļķu iela 1, Centra rajons, Rīga, LV-1658</p>  
+  <p><a href="https://www.rtu.lv/">rtu.lv</a></p>  
+  <p> </p>
+  <hr>  
+  <p> </p>  
+  <p><b>Latvijas Universitāte</b></p>  
+  <p>Raiņa bulvāris 19, Centra rajons, Rīga, LV-1586</p> 
+  <p><a href="https://www.lu.lv/">lu.lv</a></p>  
+  <p> </p> 
+  <hr>
+  <p><b>Latvijas Universitāte</b></p>  
+  <p>Raiņa bulvāris 19, Centra rajons, Rīga, LV-1586</p> 
+  <p><a href="https://www.lu.lv/">lu.lv</a></p> 
+  
+  
+        
+<div class="kajene">
+  <p>Autors: Andris Sēlis</p>
+</div>
+        
+        <script>
+//Get the button
+var mybutton = document.getElementById("poga_augsup");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function myFunction() {
+  var elmnt = document.getElementById("saturs");
+  elmnt.scrollIntoView();
+}
+
+</script>
+    
+</html>
